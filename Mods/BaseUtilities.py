@@ -4,10 +4,15 @@ class Color:
        self.g = g
        self.b = b 
 
-class Rectangle:
-    def __init__(x: float, y: float, width: float, height: float, color: Color):
+class Vector:
+    def __init__(x: float, y: float, z: float = 0.0):
         self.x = x
         self.y = y
-        self.width = width
-        self.height = height
-        self.color = color 
+        self.z = z
+
+class Trangle: 
+    def __init__(v1, v2, v3, color):
+        self.v1 = v1
+        self.v2 = v2
+        self.v3 = v3
+        self.color = color
